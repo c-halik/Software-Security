@@ -8,9 +8,9 @@ ans: 16 (*'--')
 
 3. Which of the following operations are suppliers permitted to do? Use SQL injection to bypass authentication, or find a way to create an account as a supplier.
 
-View existing price list
+View existing price list (+)
 Cancel contract
-Upload price list
+Upload price list (+)
 Submit monthly bill payment
 Download an activity report
 
@@ -36,6 +36,15 @@ ans: CartID
 7. BadStore's session cookie format is poorly designed because it is uses a predictable structure. In particular, it is an encoded string (with a URL-encoded newline at the end) of the form XXX:YYY:ZZZ:U. What are the XXX, YYY, and ZZZ portions of this string?
 
 ans:
+integer that counts the number of times ever logged in
+SHA1 hash of password
+the number of failed login attempts
+MD5 hash of password (+)
+e-mail address (+)
+expiration timeout
+role (+)
+full name (+)
+
 
 8. BadStore's cart cookie is also an encoded string with a predictable structure XXX:YYY:... etc., and it probably contains information it shouldn't. Which field of the decoded string could an attacker change to give himself a discount on an item's price?
 
